@@ -1,7 +1,10 @@
-// test/loader.test.js
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { loadSSL } from '../src/loader.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const tempCertPath = path.join(__dirname, 'temp-cert.pem');
 const tempKeyPath = path.join(__dirname, 'temp-key.pem');

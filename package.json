@@ -1,27 +1,68 @@
 {
   "name": "secure-ssl-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Effortless HTTPS server creation for Node.js with automatic certificate reloading. Zero-dependency SSL helper for Express applications.",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "jest",
-    "lint": "eslint . --ext .js",
-    "format": "prettier --write ."
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "npm run lint && npm test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.1.0",
-    "lodash.debounce": "^4.0.8"
+  "keywords": [
+    "ssl",
+    "https",
+    "tls",
+    "express",
+    "server",
+    "certificate",
+    "security",
+    "auto-reload",
+    "certificate-management",
+    "node-server",
+    "https-server",
+    "ssl-certificates",
+    "express-middleware",
+    "secure-server"
+  ],
+  "author": {
+    "name": "Omar Gamal",
+    "email": "omar.gamal.m@gmail.com",
+    "url": "https://github.com/Omar0Gamal"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omar0Gamal/secure-ssl-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Omar0Gamal/secure-ssl-server/issues"
+  },
+  "homepage": "https://github.com/Omar0Gamal/secure-ssl-server#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "cross-env": "^7.0.3",
     "eslint": "^9.39.1",
-    "jest": "^30.2.0",
-    "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
+    "globals": "^15.0.0",
+    "jest": "^29.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0 || ^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": false
+    }
   }
 }
