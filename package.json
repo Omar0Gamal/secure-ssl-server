@@ -1,0 +1,27 @@
+{
+  "name": "secure-ssl-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "lodash.debounce": "^4.0.8"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
+}
