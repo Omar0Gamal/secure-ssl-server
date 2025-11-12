@@ -8,6 +8,7 @@ import { watchFiles } from './watcher.js';
  * @param {Object} options
  * @param {string} options.certPath - Path to certificate
  * @param {string} options.keyPath - Path to private key
+ * @param {string} [options.caPath] - Path to CA bundle
  * @param {boolean} [options.watch] - Watch files for changes
  * @param {Function} [options.onReload] - Callback on reload
  * @param {number} [options.port] - Port to listen on
