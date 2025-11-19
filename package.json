@@ -1,9 +1,10 @@
 {
   "name": "secure-ssl-server",
-  "version": "1.0.0",
-  "description": "Effortless HTTPS server creation for Node.js with automatic certificate reloading. Zero-dependency SSL helper for Express applications.",
+  "version": "2.0.0",
+  "description": "Effortless HTTPS server creation for Node.js with multi-framework support, automatic certificate reloading, and Let's Encrypt integration.",
   "main": "src/index.js",
   "type": "module",
+  "types": "index.d.ts",
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "test:coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
@@ -17,6 +18,9 @@
     "https",
     "tls",
     "express",
+    "fastify",
+    "koa",
+    "hapi",
     "server",
     "certificate",
     "security",
@@ -26,7 +30,11 @@
     "https-server",
     "ssl-certificates",
     "express-middleware",
-    "secure-server"
+    "secure-server",
+    "letsencrypt",
+    "acme",
+    "certificate-monitoring",
+    "multi-framework"
   ],
   "author": {
     "name": "Omar Gamal",
@@ -47,9 +55,13 @@
   },
   "files": [
     "src/",
+    "index.d.ts",
     "README.md",
     "LICENSE"
   ],
+  "dependencies": {
+    "acme-client": "^5.0.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "cross-env": "^7.0.3",
@@ -58,11 +70,23 @@
     "jest": "^29.0.0"
   },
   "peerDependencies": {
-    "express": "^4.0.0 || ^5.0.0"
+    "express": "^4.0.0 || ^5.0.0",
+    "@fastify/fastify": "^4.0.0 || ^5.0.0",
+    "koa": "^2.0.0",
+    "@hapi/hapi": "^21.0.0"
   },
   "peerDependenciesMeta": {
     "express": {
-      "optional": false
+      "optional": true
+    },
+    "@fastify/fastify": {
+      "optional": true
+    },
+    "koa": {
+      "optional": true
+    },
+    "@hapi/hapi": {
+      "optional": true
     }
   }
 }
