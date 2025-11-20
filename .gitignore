@@ -19,3 +19,5 @@ coverage/
 # Optional: IDE files
 .idea/
 .vscode/
+
+ignored

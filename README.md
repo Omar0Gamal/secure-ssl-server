@@ -5,6 +5,7 @@
 A comprehensive SSL/TLS helper that simplifies HTTPS server setup across multiple Node.js frameworks. Perfect for development and production environments with built-in certificate management, monitoring, and Let's Encrypt integration.
 
 [![npm version](https://img.shields.io/npm/v/secure-ssl-server.svg)](https://www.npmjs.com/package/secure-ssl-server)
+[![CI/CD](https://github.com/Omar0Gamal/secure-ssl-server/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Omar0Gamal/secure-ssl-server/actions/workflows/ci-cd.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js Version](https://img.shields.io/node/v/secure-ssl-server.svg)](https://nodejs.org)
 
@@ -612,7 +613,9 @@ A: Yes! Full TypeScript definitions are included in v2.0.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## 📄 License
 
