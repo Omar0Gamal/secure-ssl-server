@@ -2,12 +2,20 @@
 
 Thank you for your interest in contributing! This document provides guidelines for contributing to the project.
 
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
 ## 🚀 Getting Started
 
 1. Fork the repository
 2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/secure-ssl-server.git`
 3. Install dependencies: `npm install`
 4. Create a branch: `git checkout -b feature/your-feature-name`
+
+## 🐛 Reporting Bugs & 💡 Requesting Features
+
+We use GitHub Issues to track bugs and feature requests.
+- If you find a bug, please use the [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.yml).
+- If you have a feature idea, please use the [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.yml).
 
 ## 🔧 Development
 
